@@ -7,7 +7,7 @@
     <bean id="dataSource"
           class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="org.h2.Driver" />
-        <property name="url" value="jdbc:h2:~/AuthoLogin" />
+        <property name="url" value="jdbc:h2:~/OauthLogin;MVCC=TRUE" />
         <property name="username" value="sa" />
         <property name="password" value="" />
     </bean>
@@ -19,9 +19,12 @@
             <props>
                 <prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop>
                 <prop key="hibernate.show_sql">true</prop>
+
                 <prop key="hibernate.jdbc.batch_size">50</prop>
+                <prop key="hibernate.hbm2ddl.auto">create-drop</prop>
             </props>
         </property>
+
         <property name="packagesToScan" value="uk.ac.ncl.cs.zequnli.model" />
     </bean>
 

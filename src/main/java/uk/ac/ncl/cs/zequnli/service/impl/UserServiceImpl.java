@@ -22,4 +22,8 @@ public class UserServiceImpl implements UserService {
     public boolean checkUser(User user) {
       return userdao.getUser(user);
     }
+    @Override
+    public boolean userExist(String username) {
+        return userdao.checkExist(username);
+    }
 }
