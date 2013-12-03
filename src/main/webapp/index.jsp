@@ -6,5 +6,6 @@
 </head>
 <body>
       <a href = "/login.do">login</a>
+      <a href = "/register.do">register</a>
 </body>
 </html>

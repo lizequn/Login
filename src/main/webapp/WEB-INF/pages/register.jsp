@@ -6,9 +6,9 @@
     <title></title>
 </head>
 <body>
-<h1>Login</h1>
+<h1>register</h1>
 <div>
-    <f:form action="loginPro.do" method="post"  commandName="user">
+    <f:form action="registerPro.do" method="post"  commandName="user">
         <div>
             <f:label for="username" path="username">Username:</f:label>
             <f:input path="username"></f:input>
