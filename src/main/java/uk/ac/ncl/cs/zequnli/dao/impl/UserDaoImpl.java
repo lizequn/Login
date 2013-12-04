@@ -8,6 +8,8 @@ import org.springframework.stereotype.Repository;
 import uk.ac.ncl.cs.zequnli.dao.UserDao;
 import uk.ac.ncl.cs.zequnli.model.User;
 
+import java.util.List;
+
 @Repository
 public class UserDaoImpl extends HibernateDaoSupport implements UserDao {
 
@@ -30,5 +32,10 @@ public class UserDaoImpl extends HibernateDaoSupport implements UserDao {
         String [] s = new String[1];
         s[0] = username;
         return !getHibernateTemplate().find("from User u where u.username = ?",s).isEmpty();
+    }
+    @Override
+    public List<User> getAllUsers(){
+        List<User> list = (List<User>)getHibernateTemplate().find("from User ");
+        return list;
     }
 }

@@ -9,11 +9,13 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import uk.ac.ncl.cs.zequnli.interceptor.Login;
 import uk.ac.ncl.cs.zequnli.model.User;
 import uk.ac.ncl.cs.zequnli.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
 import java.lang.invoke.MethodType;
+import java.util.List;
 
 
 @Controller
@@ -46,11 +48,20 @@ public class UserController {
     @RequestMapping(value = "loginPro.do" , method = RequestMethod.POST)
     public ModelAndView loginMethod(Model model, @ModelAttribute("user") User user,BindingResult result,HttpServletRequest request){
         if(userservice.checkUser(user)){
-            request.getSession().setAttribute("login",user.getId());
+            request.getSession().setAttribute("login",user);
             model.addAttribute("message","login success");
             return new ModelAndView("success");
         }
         model.addAttribute("message","login failed");
         return new ModelAndView("login");
     }
+
+    @Login
+    @RequestMapping(value = "list.do",method = RequestMethod.GET)
+    public ModelAndView listAllUsers(Model model){
+         List<User> list = userservice.getAllUsers();
+         model.addAttribute("list",list);
+        return new ModelAndView("listUsers");
+    }
+
 }

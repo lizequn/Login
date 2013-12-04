@@ -16,6 +16,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.2.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:3.2.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.2.5.RELEASE" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:3.2.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:3.2.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:3.2.5.RELEASE" />

@@ -6,6 +6,9 @@ import org.springframework.transaction.annotation.Transactional;
 import uk.ac.ncl.cs.zequnli.dao.UserDao;
 import uk.ac.ncl.cs.zequnli.model.User;
 import uk.ac.ncl.cs.zequnli.service.UserService;
+
+import java.util.List;
+
 @Service
 @Transactional
 public class UserServiceImpl implements UserService {
@@ -25,5 +28,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean userExist(String username) {
         return userdao.checkExist(username);
+    }
+    @Override
+    public List<User> getAllUsers() {
+        return userdao.getAllUsers();
     }
 }
