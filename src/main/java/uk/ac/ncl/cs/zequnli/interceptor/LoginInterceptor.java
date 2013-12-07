@@ -1,5 +1,6 @@
 package uk.ac.ncl.cs.zequnli.interceptor;
 
+import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import uk.ac.ncl.cs.zequnli.model.User;

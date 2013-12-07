@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,6 +15,7 @@ import uk.ac.ncl.cs.zequnli.model.User;
 import uk.ac.ncl.cs.zequnli.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 import java.lang.invoke.MethodType;
 import java.util.List;
 
@@ -35,7 +37,17 @@ public class UserController {
     }
 
     @RequestMapping(value = "registerPro.do" , method = RequestMethod.POST)
-    public ModelAndView registerMethod(Model model,@ModelAttribute("user") User user, BindingResult result){
+    public ModelAndView registerMethod(Model model,@Valid @ModelAttribute("user") User user, BindingResult result){
+        if(result.hasErrors()){
+            StringBuilder sb = new StringBuilder();
+            for(ObjectError oe:result.getAllErrors()){
+                sb.append(oe.getDefaultMessage());
+                sb.append("     ");
+            }
+            model.addAttribute("message",sb.toString());
+            return new ModelAndView("login");
+        }
+
         if(userservice.userExist(user.getUsername())){
             model.addAttribute("message","user already exist");
             return new ModelAndView("login");
@@ -46,7 +58,16 @@ public class UserController {
     }
 
     @RequestMapping(value = "loginPro.do" , method = RequestMethod.POST)
-    public ModelAndView loginMethod(Model model, @ModelAttribute("user") User user,BindingResult result,HttpServletRequest request){
+    public ModelAndView loginMethod(Model model, @Valid @ModelAttribute("user") User user,BindingResult result,HttpServletRequest request){
+        if(result.hasErrors()){
+            StringBuilder sb = new StringBuilder();
+            for(ObjectError oe:result.getAllErrors()){
+                sb.append(oe.getDefaultMessage());
+                sb.append("     ");
+            }
+            model.addAttribute("message",sb.toString());
+            return new ModelAndView("login");
+        }
         if(userservice.checkUser(user)){
             request.getSession().setAttribute("login",user);
             model.addAttribute("message","login success");
