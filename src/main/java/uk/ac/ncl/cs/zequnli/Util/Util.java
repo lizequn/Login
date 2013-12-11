@@ -5,14 +5,13 @@ package uk.ac.ncl.cs.zequnli.Util;
  * Date: 03/12/13
  */
 public class Util {
-    private final static String clientId = "223283651290.apps.googleusercontent.com";
-    private final static String clientSecret = "lp3SDksMkQ0Vd40NUBjqXpkO";
+//    private final static String clientId = "223283651290.apps.googleusercontent.com";
+//    private final static String clientSecret = "lp3SDksMkQ0Vd40NUBjqXpkO";
+    private final static String clientId = "245657068926997";
+    private final static String clientSecret = "3b7d22ecccb0299fd6a89392a8bfabb3";
     private final static String redirectUrl = "http://localhost:8080/getOauth.do";
-    private final static String accessTokenUrl = "http://localhost:8080/getAccessToken.do";
 
-    public static String getAccessTokenUrl() {
-        return accessTokenUrl;
-    }
+
 
     public static String getRedirectUrl() {
         return redirectUrl;

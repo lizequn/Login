@@ -25,20 +25,18 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * @Auther: Li Zequn
- * Date: 05/12/13
- */
+* @Auther: Li Zequn
+* Date: 05/12/13
+*/
 @Controller
 public class OAuthController {
-    @RequestMapping(value = "loginGoogle.do")
-    public ModelAndView loginByGoogle(HttpServletRequest request,HttpServletResponse response){
+    @RequestMapping(value = "loginFaceBook.do")
+    public ModelAndView loginByFaceBook(HttpServletRequest request,HttpServletResponse response){
         OAuthClientRequest request1;
         try {
-            request1 = OAuthClientRequest.authorizationProvider(OAuthProviderType.GOOGLE)
+            request1 = OAuthClientRequest.authorizationProvider(OAuthProviderType.FACEBOOK)
                     .setClientId(Util.getClientId())
                     .setRedirectURI(Util.getRedirectUrl())
-                    .setResponseType("code")
-                    .setScope("openid email")
                     .buildQueryMessage();
         } catch (OAuthSystemException e) {
             e.printStackTrace();
@@ -49,12 +47,12 @@ public class OAuthController {
     }
 
     @RequestMapping(value = "getOauth.do")
-    public ModelAndView accessGoogle(HttpServletRequest request,HttpServletResponse response,Model model,HttpSession session){
+    public ModelAndView accessFaceBook(HttpServletRequest request,HttpServletResponse response,Model model,HttpSession session){
         OAuthAuthzResponse oar;
         OAuthClientRequest request1;
         try {
             oar = OAuthAuthzResponse.oauthCodeAuthzResponse(request);
-            request1 = OAuthClientRequest.tokenProvider(OAuthProviderType.GOOGLE)
+            request1 = OAuthClientRequest.tokenProvider(OAuthProviderType.FACEBOOK)
                     .setGrantType(GrantType.AUTHORIZATION_CODE)
                     .setClientId(Util.getClientId())
                     .setClientSecret(Util.getClientSecret())
@@ -62,14 +60,14 @@ public class OAuthController {
                     .setCode(oar.getCode())
                     .buildQueryMessage();
             OAuthClient oAuthClient = new OAuthClient(new URLConnectionClient());
-            //error
-            OAuthJSONAccessTokenResponse oAuthJSONAccessTokenResponse = oAuthClient.accessToken(request1, OAuthJSONAccessTokenResponse.class);
-            String accessToken = oAuthJSONAccessTokenResponse.getAccessToken();
-           // OAuthClientRequest bearerClientRequest = new OAuthBearerClientRequest("https://plus.google.com/").setAccessToken(accessToken).buildQueryMessage();
-           // OAuthResourceResponse resourceResponse = oAuthClient.resource(bearerClientRequest, OAuth.HttpMethod.GET, OAuthResourceResponse.class);
-           // model.addAttribute("code",resourceResponse.getResponseCode());
-           // model.addAttribute("message",resourceResponse.getBody());
-            model.addAttribute("message",accessToken);
+
+            GitHubTokenResponse gitHubTokenResponse = oAuthClient.accessToken(request1, GitHubTokenResponse.class);
+            String accessToken = gitHubTokenResponse.getAccessToken();
+            OAuthClientRequest bearerClientRequest = new OAuthBearerClientRequest("https://graph.facebook.com/me").setAccessToken(accessToken).buildQueryMessage();
+            OAuthResourceResponse resourceResponse = oAuthClient.resource(bearerClientRequest, OAuth.HttpMethod.GET, OAuthResourceResponse.class);
+            model.addAttribute("code",resourceResponse.getResponseCode());
+            model.addAttribute("message",resourceResponse.getBody());
+
             return new ModelAndView("oauthSuccess");
         } catch (OAuthProblemException e) {
             e.printStackTrace();
