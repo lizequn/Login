@@ -11,7 +11,9 @@
     <title>success</title>
 </head>
 <body>
-    ${code}
     ${message}
+    <br>
+    <a href="/logout.do">logout</a>      <br>
+<a href="/Info.do">get info</a>
 </body>
 </html>

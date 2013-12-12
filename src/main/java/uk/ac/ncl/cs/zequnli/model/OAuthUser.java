@@ -15,9 +15,45 @@ public class OAuthUser {
     @GeneratedValue
     private Long id;
 
+    private String name;
     private String username;
+    private String userId;
+    private String gender;
+    private String page;
 
-    private String info;
+    public String getGender() {
+        return gender;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPage() {
+        return page;
+    }
+
+    public void setPage(String page) {
+        this.page = "https://www.facebook.com/"+page;
+    }
+
+
     public Long getId() {
         return id;
     }
@@ -26,13 +62,6 @@ public class OAuthUser {
         this.id = id;
     }
 
-    public String getInfo() {
-        return info;
-    }
-
-    public void setInfo(String info) {
-        this.info = info;
-    }
 
     public String getUsername() {
         return username;

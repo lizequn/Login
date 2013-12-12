@@ -18,16 +18,22 @@ public class OAuthUserDaoImpl extends HibernateDaoSupport implements OAuthUserDa
         setSessionFactory(factory);
     }
 
-    public boolean checkExist(String username) {
-        return !getHibernateTemplate().find("from OAuthUser u where u.username = ?",username).isEmpty();
+    public boolean checkExist(String userId) {
+        return !getHibernateTemplate().find("from OAuthUser u where u.userId = ?",userId).isEmpty();
     }
 
-    public OAuthUser getInfoByName(System username) {
+    public OAuthUser getInfoByName(String username) {
         OAuthUser user =(OAuthUser)getHibernateTemplate().find("from OAuthUser u where u.username = ?",username).get(0);
         return user;
     }
 
     public void register(OAuthUser user) {
-       getHibernateTemplate().persist(user);
+        if(!checkExist(user.getUserId())){
+            getHibernateTemplate().persist(user);
+        } else {
+            OAuthUser old = (OAuthUser)getHibernateTemplate().find("from OAuthUser u where u.userId = ?",user.getUserId()).get(0);
+            user.setId(old.getId());
+            getHibernateTemplate().update(user);
+        }
     }
 }

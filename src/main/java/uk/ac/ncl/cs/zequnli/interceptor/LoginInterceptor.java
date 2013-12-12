@@ -18,7 +18,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
             return true;
         }
         HttpSession session = request.getSession();
-        User user = (User)session.getAttribute("login");
+        Object user = session.getAttribute("login");
         if(null == user){
             request.setAttribute("message","please Login ");
             request.getRequestDispatcher("login.do").forward(request,response);

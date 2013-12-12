@@ -9,4 +9,5 @@ public interface UserService {
     boolean checkUser(User user);
     boolean userExist(String username);
     List<User> getAllUsers();
+    void linkUser(User user,String userId);
 }

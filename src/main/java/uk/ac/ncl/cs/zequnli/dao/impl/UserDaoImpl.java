@@ -33,6 +33,12 @@ public class UserDaoImpl extends HibernateDaoSupport implements UserDao {
         s[0] = username;
         return !getHibernateTemplate().find("from User u where u.username = ?",s).isEmpty();
     }
+
+    public void linkUser(User user ,String userId) {
+       user.setFaceBookId(userId);
+        getHibernateTemplate().update(user);
+    }
+
     @Override
     public List<User> getAllUsers(){
         List<User> list = (List<User>)getHibernateTemplate().find("from User ");

@@ -8,6 +8,6 @@ import uk.ac.ncl.cs.zequnli.model.OAuthUser;
  */
 public interface OAuthUserDao {
     boolean checkExist(String username);
-    OAuthUser getInfoByName(System username);
+    OAuthUser getInfoByName(String username);
     void register(OAuthUser user);
 }

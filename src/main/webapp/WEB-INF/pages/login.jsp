@@ -21,6 +21,7 @@ ${message}
 
         <input type="submit">
     </f:form>
+    <a href="/register.do">register</a>
 
 </div>
 

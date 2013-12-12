@@ -2,42 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b231428c-ff0b-4534-99e0-1193c0384197" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_http_client_google_http_client_1_17_0_rc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_oauth_client_google_oauth_client_1_17_0_rc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/OAuthController1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/DoController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/model/Info.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/Info.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/InfoDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/impl/InfoDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/InfoService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/impl/InfoServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/impl/OAuthUserServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/model/UserType.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Login.iml" afterPath="$PROJECT_DIR$/Login.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/interceptor/LoginInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/interceptor/LoginInterceptor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Login_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Login_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/OAuthController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/OAuthController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/Util/Util.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/Util/Util.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/OAuthController1.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/OAuthController1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/model/OAuthUser.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/model/OAuthUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/OAuthUserDao.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/OAuthUserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/impl/OAuthUserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/impl/OAuthUserDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/OAuthUserService.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/OAuthUserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/model/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/impl/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/impl/UserDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listUsers.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listUsers.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/oauthSuccess.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/oauthSuccess.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Login.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386793167979" ignored="false" />
+    <file path="/Dummy.txt" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386887492373" ignored="false" />
     <file path="/index.jsp" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386798782679" ignored="false" />
-    <file path="/UserController.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386424512193" ignored="false" />
-    <file path="/login.jsp" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386198230261" ignored="false" />
-    <file path="/UserDao.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386199043932" ignored="false" />
-    <file path="/UserDaoImpl.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386199055278" ignored="false" />
+    <file path="/UserController.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386886567612" ignored="false" />
+    <file path="/login.jsp" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386880861061" ignored="false" />
+    <file path="/UserDao.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386875457323" ignored="false" />
+    <file path="/UserDaoImpl.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386875442260" ignored="false" />
     <file path="/UserService.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386199088205" ignored="false" />
-    <file path="/UserServiceImpl.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386199423263" ignored="false" />
+    <file path="/UserServiceImpl.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386876340916" ignored="false" />
     <file path="/AppTests.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386070849061" ignored="false" />
     <file path="/web.xml" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386074737829" ignored="false" />
     <file path="/applicationContext.xml" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386197842805" ignored="false" />
-    <file path="/success.jsp" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386194348280" ignored="false" />
+    <file path="/success.jsp" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386881230241" ignored="false" />
     <file path="$PROJECT_DIR$/../client-demo/src/main/webapp/WEB-INF/views/get_authz.jsp" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386081081388" ignored="false" />
     <file path="/Util.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386432912865" ignored="false" />
     <file path="/pom.xml" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386423564252" ignored="false" />
     <file path="/Login.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386254682185" ignored="false" />
-    <file path="/LoginInterceptor.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386425825999" ignored="false" />
+    <file path="/LoginInterceptor.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386877600329" ignored="false" />
     <file path="/mvc-dispatcher-servlet.xml" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386254853586" ignored="false" />
     <file path="/listUsers.jsp" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386200136833" ignored="false" />
-    <file path="/OAuthController.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386799189444" ignored="false" />
+    <file path="/OAuthController.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386882872133" ignored="false" />
     <file path="$PROJECT_DIR$/../Cloud/src/main/webapp/index.jsp" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386254613065" ignored="false" />
     <file path="$PROJECT_DIR$/../Cloud/src/main/java/uk/ac/ncl/cs/zequnli/cc/interceptor/Login.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386254751339" ignored="false" />
     <file path="$PROJECT_DIR$/../Cloud/src/main/java/uk/ac/ncl/cs/zequnli/cc/interceptor/LoginInterceptor.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386254747764" ignored="false" />
@@ -46,13 +64,13 @@
     <file path="$PROJECT_DIR$/../Cloud/src/main/webapp/WEB-INF/pages/login.jsp" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386254940940" ignored="false" />
     <file path="$PROJECT_DIR$/../Cloud/pom.xml" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386256551304" ignored="false" />
     <file path="$PROJECT_DIR$/../Cloud/.idea/workspace.xml" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386791439192" ignored="false" />
-    <file path="/OAuthUser.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386423016618" ignored="false" />
-    <file path="/OAuthUserDao.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386425325032" ignored="false" />
-    <file path="/User.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386424259561" ignored="false" />
-    <file path="/OAuthUserDaoImpl.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386425771505" ignored="false" />
+    <file path="/OAuthUser.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386874496154" ignored="false" />
+    <file path="/OAuthUserDao.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386861563500" ignored="false" />
+    <file path="/User.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386875015669" ignored="false" />
+    <file path="/OAuthUserDaoImpl.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386876138618" ignored="false" />
     <file path="/error.jsp" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386436550292" ignored="false" />
-    <file path="/oauthSuccess.jsp" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386434344538" ignored="false" />
-    <file path="/fragment.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386437545787" ignored="false" />
+    <file path="/oauthSuccess.jsp" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386884988136" ignored="false" />
+    <file path="/fragment.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386851547203" ignored="false" />
     <file path="$PROJECT_DIR$/../client-demo/pom.xml" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386437760740" ignored="false" />
     <file path="$PROJECT_DIR$/../org.apache.oltu.oauth2.parent-0.31/pom.xml" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386796246272" ignored="false" />
     <file path="D:/JavaProject/Cloud/.settings/org.eclipse.wst.common.project.facet.core.xml" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386800137210" ignored="false" />
@@ -65,6 +83,49 @@
     <file path="/BookingEntity.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386801859623" ignored="false" />
     <file path="D:/JavaProject/Cloud/src/main/java/data/CSVData.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386802752376" ignored="false" />
     <file path="/CSVData.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386802749090" ignored="false" />
+    <file path="D:/JavaProject/test-web/src/main/webapp/js/controllers.js" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386861221826" ignored="false" />
+    <file path="/controllers.js" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386861221826" ignored="false" />
+    <file path="/list.html" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386860934888" ignored="false" />
+    <file path="D:/JavaProject/test-web/src/main/webapp/partials/list.html" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386860934888" ignored="false" />
+    <file path="/OAuthUserService.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386877503566" ignored="false" />
+    <file path="/OAuthUserServiceImpl.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386877547463" ignored="false" />
+    <file path="/TokenController.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386862069688" ignored="false" />
+    <file path="$PROJECT_DIR$/../client-demo/src/main/java/org/apache/oltu/oauth2/client/demo/controller/TokenController.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386862072727" ignored="false" />
+    <file path="/OAuthController1.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386862107764" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/action/LoginAction.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872431664" ignored="false" />
+    <file path="/LoginAction.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872427203" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/entity/UserEntity.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872364014" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/entity/OrderEntity.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872364014" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/dao/UserDao.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872364014" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/action/RegisterAction-validation.xml" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872364014" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/action/OrderAction.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386873858383" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/dao/OrderDaoImpl.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872364014" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/entity/GoodsEntity.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872364014" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/model/User.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872364014" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/dao/UserDaoImpl.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872364014" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/dao/OrderDao.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872364014" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/model/Order.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872364014" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/action/RegisterAction.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872364014" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/action/LoginAction-validation.xml" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872364014" ignored="false" />
+    <file path="D:/JavaProject/4cloud/pom.xml" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872777433" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/resources/struts.xml" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386872364014" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/webapp/orderManage.jsp" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386873390899" ignored="false" />
+    <file path="/orderManage.jsp" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386873381210" ignored="false" />
+    <file path="/OrderAction.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386873854404" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/dao/GoodsDao.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386873535865" ignored="false" />
+    <file path="/GoodsDao.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386873487529" ignored="false" />
+    <file path="D:/JavaProject/4cloud/src/main/java/com/wx/dao/GoodsDaoImpl.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386873724375" ignored="false" />
+    <file path="/GoodsDaoImpl.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386873722927" ignored="false" />
+    <file path="/DoController.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386883347167" ignored="false" />
+    <file path="/Info.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386883559758" ignored="false" />
+    <file path="/InfoDao.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386878765795" ignored="false" />
+    <file path="/InfoDaoImpl.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386878883183" ignored="false" />
+    <file path="/InfoService.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386878951457" ignored="false" />
+    <file path="/InfoServiceImpl.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386879026708" ignored="false" />
+    <file path="/UserType.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386879295046" ignored="false" />
+    <file path="/Info.jsp" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386884825824" ignored="false" />
+    <file path="D:/JavaProject/RandomInsert/src/insert.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386886615801" ignored="false" />
+    <file path="$PROJECT_DIR$/../Cloud/src/main/java/uk/ac/ncl/cs/zequnli/cc/util/Data4Jmeter.java" changelist="b231428c-ff0b-4534-99e0-1193c0384197" time="1386890222227" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,22 +186,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="Info.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/Info.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="91" selection-start="2822" selection-end="2822" vertical-scroll-proportion="0.0">
+            <state line="31" column="10" selection-start="710" selection-end="710" vertical-scroll-proportion="-20.26923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OAuthController.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/OAuthController.java">
+      <file leaf-file-name="listUsers.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listUsers.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="74" selection-start="3789" selection-end="3789" vertical-scroll-proportion="1.2629796">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="20" column="35" selection-start="425" selection-end="425" vertical-scroll-proportion="-13.076923">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,7 +207,7 @@
       <file leaf-file-name="oauthSuccess.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/oauthSuccess.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="6" selection-start="271" selection-end="271" vertical-scroll-proportion="-7.8461537">
+            <state line="18" column="8" selection-start="389" selection-end="389" vertical-scroll-proportion="-11.769231">
               <folding />
             </state>
           </provider>
@@ -157,61 +216,58 @@
       <file leaf-file-name="login.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="24" column="19" selection-start="677" selection-end="677" vertical-scroll-proportion="-15.692307">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OAuthController1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/OAuthController1.java">
+      <file leaf-file-name="OAuthController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/OAuthController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="50" selection-start="3652" selection-end="3652" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="94" column="37" selection-start="4687" selection-end="4687" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <file leaf-file-name="DoController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/DoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="32" selection-start="235" selection-end="235" vertical-scroll-proportion="-5.8846154">
-              <folding />
+            <state line="34" column="69" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Util.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/Util/Util.java">
+      <file leaf-file-name="UserType.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/model/UserType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="80" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+            <state line="8" column="7" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Info.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/model/Info.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="41" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OAuthUserDaoImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/impl/OAuthUserDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="3" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OAuthUserService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/OAuthUserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="4" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+            <state line="91" column="64" selection-start="3510" selection-end="3510" vertical-scroll-proportion="0.8739184">
               <folding />
             </state>
           </provider>
@@ -235,22 +291,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listUsers.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/model/OAuthUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/OAuthUserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/impl/OAuthUserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/interceptor/LoginInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/OAuthUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/oauthSuccess.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/OAuthController1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/Util/Util.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/model/OAuthUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/InfoDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/impl/InfoDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/InfoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/impl/InfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/model/UserType.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/OAuthController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/DoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/model/Info.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/Info.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listUsers.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/oauthSuccess.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -311,6 +367,24 @@
           <option name="myItemId" value="Plugins" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
         </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="compiler" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Login" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
@@ -321,10 +395,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="2576" />
-    <option name="height" value="1416" />
+    <option name="x" value="273" />
+    <option name="y" value="71" />
+    <option name="width" value="2013" />
+    <option name="height" value="1267" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -339,7 +413,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectStructureProblems">
     <ignored-problems>
@@ -510,44 +584,6 @@
               <option name="myItemId" value="zequnli" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zequnli" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -605,100 +641,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="interceptor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zequnli" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zequnli" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zequnli" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -718,18 +660,18 @@
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../google-oauth2/pom.xml" />
+    <property name="last_opened_file_path" value="D:/JavaProject/4cloud/pom.xml" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 7.0">
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -1012,14 +954,18 @@
       <created>1386438138267</created>
       <updated>1386438138267</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix">
+      <created>1386802880997</created>
+      <updated>1386802880997</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="false" />
+    <frame x="273" y="71" width="2013" height="1267" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906324" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1036,10 +982,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4968153" sideWeight="0.7606085" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49666497" sideWeight="0.7609091" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18909235" sideWeight="0.7606085" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23939152" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24320164" sideWeight="0.7609091" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2390909" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1091,7 +1037,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="add provided scope for tomcat" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1108,6 +1054,7 @@
     <MESSAGE value="login finish" />
     <MESSAGE value="login&amp;register finish" />
     <MESSAGE value="add provided scope for tomcat" />
+    <MESSAGE value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1117,117 +1064,129 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/InfoDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="24" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="625" selection-end="625" vertical-scroll-proportion="-3.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/interceptor/LoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/OAuthUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="12" column="28" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/impl/OAuthUserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="3" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.0">
+        <state line="14" column="57" selection-start="442" selection-end="469" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../google-oauth2/src/main/java/org/xiha/google/auth2/user/GooogleUserInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/dao/impl/InfoDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="41" selection-start="581" selection-end="581" vertical-scroll-proportion="0.09970675">
-          <folding />
+        <state line="28" column="49" selection-start="802" selection-end="802" vertical-scroll-proportion="0.5883807">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/InfoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="12" column="28" selection-start="239" selection-end="239" vertical-scroll-proportion="0.25216317">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/impl/InfoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="91" selection-start="2822" selection-end="2822" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/Util/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="80" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/service/OAuthUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="23" column="32" selection-start="607" selection-end="607" vertical-scroll-proportion="0.48331273">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="235" selection-end="235" vertical-scroll-proportion="-5.8846154">
+        <state line="9" column="7" selection-start="210" selection-end="210" vertical-scroll-proportion="-5.8846154">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/oauthSuccess.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/success.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="271" selection-end="271" vertical-scroll-proportion="-7.8461537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/OAuthController1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="50" selection-start="3652" selection-end="3652" vertical-scroll-proportion="0.0">
+        <state line="9" column="30" selection-start="188" selection-end="188" vertical-scroll-proportion="0.1954023">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/OAuthController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="74" selection-start="3789" selection-end="3789" vertical-scroll-proportion="1.2629796">
+        <state line="94" column="37" selection-start="4687" selection-end="4687" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/model/UserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="7" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/model/Info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="41" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/Info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="10" selection-start="710" selection-end="710" vertical-scroll-proportion="-20.26923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/listUsers.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="35" selection-start="425" selection-end="425" vertical-scroll-proportion="-13.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="19" selection-start="677" selection-end="677" vertical-scroll-proportion="-15.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/oauthSuccess.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="8" selection-start="389" selection-end="389" vertical-scroll-proportion="-11.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/DoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="69" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/ncl/cs/zequnli/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="64" selection-start="3510" selection-end="3510" vertical-scroll-proportion="0.8739184">
+          <folding />
         </state>
       </provider>
     </entry>

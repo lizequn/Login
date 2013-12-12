@@ -18,6 +18,7 @@
     </tr>
 
 </c:forEach>
+    <a href="/logout.do">logout</a>
 </table>
 </body>
 </html>

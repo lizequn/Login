@@ -25,11 +25,11 @@
 //import java.io.IOException;
 //
 ///**
-// * @Auther: Li Zequn
-// * Date: 05/12/13
-// */
+//* @Auther: Li Zequn
+//* Date: 05/12/13
+//*/
 //@Controller
-//public class OAuthController {
+//public class OAuthController1 {
 //    @RequestMapping(value = "loginGoogle.do")
 //    public ModelAndView loginByGoogle(HttpServletRequest request,HttpServletResponse response){
 //        OAuthClientRequest request1;
@@ -60,7 +60,7 @@
 //                    .setClientSecret(Util.getClientSecret())
 //                    .setRedirectURI(Util.getRedirectUrl())
 //                    .setCode(oar.getCode())
-//                    .buildQueryMessage();
+//                    .buildBodyMessage();
 //            OAuthClient oAuthClient = new OAuthClient(new URLConnectionClient());
 //            //error
 //            OAuthJSONAccessTokenResponse oAuthJSONAccessTokenResponse = oAuthClient.accessToken(request1, OAuthJSONAccessTokenResponse.class);

@@ -20,6 +20,16 @@ public class User {
     @Size(min = 6,message = "the password must contain more than 6 characters")
     private String password;
 
+    private String faceBookId;
+
+    public String getFaceBookId() {
+        return faceBookId;
+    }
+
+    public void setFaceBookId(String faceBookId) {
+        this.faceBookId = faceBookId;
+    }
+
     public Long getId() {
         return id;
     }

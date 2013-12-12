@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import uk.ac.ncl.cs.zequnli.interceptor.Login;
 import uk.ac.ncl.cs.zequnli.model.User;
+import uk.ac.ncl.cs.zequnli.model.UserType;
 import uk.ac.ncl.cs.zequnli.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -69,7 +70,8 @@ public class UserController {
             return new ModelAndView("login");
         }
         if(userservice.checkUser(user)){
-            request.getSession().setAttribute("login",user);
+            request.getSession().setAttribute("login", UserType.Normal);
+            request.getSession().setAttribute("type","normal");
             model.addAttribute("message","login success");
             return new ModelAndView("success");
         }
@@ -83,6 +85,13 @@ public class UserController {
          List<User> list = userservice.getAllUsers();
          model.addAttribute("list",list);
         return new ModelAndView("listUsers");
+    }
+
+    @Login
+    @RequestMapping(value = "logout.do",method = RequestMethod.GET)
+    public String logout(HttpServletRequest request, Model model){
+        request.getSession().invalidate();
+        return "login";
     }
 
 }
