@@ -22,6 +22,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import uk.ac.ncl.cs.zequnli.Util.Util;
+import uk.ac.ncl.cs.zequnli.interceptor.AppContext;
+import uk.ac.ncl.cs.zequnli.interceptor.Identity;
 import uk.ac.ncl.cs.zequnli.interceptor.Login;
 import uk.ac.ncl.cs.zequnli.model.OAuthUser;
 import uk.ac.ncl.cs.zequnli.model.UserType;
@@ -94,8 +96,11 @@ public class OAuthController {
             oAuthUserService.saveUser(username,name,userId,gender);
             System.out.println(user);
             model.addAttribute("message","UserName:"+username+" UserId:"+userId+" Name,"+name);
+            Identity identity = new Identity(user.getUsername(),UserType.FaceBook);
+            AppContext.getInstance().CheckAdd(identity,request.getSession());
             request.getSession().setAttribute("login",user);
             request.getSession().setAttribute("type", UserType.FaceBook);
+
             return new ModelAndView("oauthSuccess");
         } catch (OAuthProblemException e) {
             e.printStackTrace();

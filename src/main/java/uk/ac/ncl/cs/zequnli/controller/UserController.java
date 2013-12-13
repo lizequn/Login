@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import uk.ac.ncl.cs.zequnli.interceptor.AppContext;
+import uk.ac.ncl.cs.zequnli.interceptor.Identity;
 import uk.ac.ncl.cs.zequnli.interceptor.Login;
 import uk.ac.ncl.cs.zequnli.model.User;
 import uk.ac.ncl.cs.zequnli.model.UserType;
@@ -70,8 +72,12 @@ public class UserController {
             return new ModelAndView("login");
         }
         if(userservice.checkUser(user)){
+            Identity identity = new Identity(user.getUsername(),UserType.Normal);
+            AppContext.getInstance().CheckAdd(identity,request.getSession());
             request.getSession().setAttribute("login", UserType.Normal);
             request.getSession().setAttribute("type","normal");
+
+
             model.addAttribute("message","login success");
             return new ModelAndView("success");
         }
