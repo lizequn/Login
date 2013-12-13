@@ -89,9 +89,9 @@ public class UserController {
 
     @Login
     @RequestMapping(value = "logout.do",method = RequestMethod.GET)
-    public String logout(HttpServletRequest request, Model model){
+    public String logout( Model model,HttpServletRequest request){
         request.getSession().invalidate();
-        return "login";
+        return "index";
     }
 
 }
